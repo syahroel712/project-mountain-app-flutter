@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_mountain/main.dart';
 import 'package:flutter_app_mountain/misc/colors.dart';
 import 'package:flutter_app_mountain/pages/navpages/bar_item_page.dart';
-import 'package:flutter_app_mountain/pages/navpages/home_page.dart';
+import 'package:flutter_app_mountain/pages/home_page.dart';
 import 'package:flutter_app_mountain/pages/navpages/my_page.dart';
 import 'package:flutter_app_mountain/pages/navpages/search_page.dart';
 
