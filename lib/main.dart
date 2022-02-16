@@ -4,6 +4,7 @@ import 'package:flutter_app_mountain/cubit/app_cubits.dart';
 import 'package:flutter_app_mountain/pages/detail_page.dart';
 import 'package:flutter_app_mountain/pages/navpages/main_page.dart';
 import 'package:flutter_app_mountain/pages/welcome_page.dart';
+import 'package:flutter_app_mountain/services/data_services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
@@ -21,7 +22,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: BlocProvider<AppCubits>(
-        create: (context) => AppCubits(),
+        create: (context) => AppCubits(
+          data: DataServices(),
+        ),
         child: AppCubitLogics(),
       ),
     );
